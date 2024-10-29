@@ -23,7 +23,7 @@ jobs:
 
   cd: 
     runs-on: ubuntu-latest
-    nodes: ci 
+    needs: ci 
     steps: 
       - name: Deploy to Rednder
         uses: johnbeynon/render-deploy-action@v0.0.8
